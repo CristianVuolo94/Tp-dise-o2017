@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import exceptions.RepeatedEnterpriseFileException;
 import modelo.Repository;
+import modelo.User;
 
 public class EnterpriseRepository extends Repository<Enterprise>
 {
@@ -51,6 +52,7 @@ public class EnterpriseRepository extends Repository<Enterprise>
 		withTransaction(() ->
 			enterprises.forEach(this::addElement)
 		);
+	
 	}
 
 }
